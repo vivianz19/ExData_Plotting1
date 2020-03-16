@@ -19,7 +19,7 @@ filtered_data2 <- filtered_data[!(as.character(filtered_data$Global_active_power
 png("plot4.png", width = 480, height = 480)
 
 #Plotting four different graphs of Global Active Power against datetime, Voltage against datetime, various submetering against datetime and global reactive power against datetime.
-#Note: 'Global active power' column is converted to numeric in order to plot the histogram
+#Note: Relevant columns are converted to numeric in order to plot the following plots.
 
 #Setting global parameter so plot of 2 x 2 can be displayed
 par(mfrow = c(2,2))

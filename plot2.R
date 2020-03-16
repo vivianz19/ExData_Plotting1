@@ -15,7 +15,6 @@ datecondition2 <- data$Date <= as.Date("2007-02-02", format = "%Y-%m-%d")
 #Filtering the data for the correct dates and excluding missing data
 filtered_data <- data[datecondition1 & datecondition2, ]
 filtered_data2 <- filtered_data[!(as.character(filtered_data$Global_active_power) == "?"), ]
-#new_data$Global_active_power <- as.numeric(new_data$Global_active_power)
 
 #Opening a png file
 png("plot2.png", width = 480, height = 480)
